@@ -21,6 +21,15 @@ public class Program
 
         Func<MyClass, int> func1 = c => c.MyProperty;
         Console.WriteLine("func1(myClass): " + func1(myClass));
+
+        // Action Example
+        Action<int, int> action = (x, y) => Console.Write(x + y);
+        Console.WriteLine("Action Example: ");
+        action(3, 4);
+
+        // Expression is just a data structure representing code, it can't be executed whereas Func and Actions can be invoked.
+        // Expression and Func look almost the same, but they are different in terms of they are working
+
     }
 
 
